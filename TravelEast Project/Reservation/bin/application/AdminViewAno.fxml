@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6CB4EE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminViewController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="123.0" style="-fx-background-color: #F0F8FF;">
+         <children>
+            <Label layoutX="13.0" layoutY="14.0" prefHeight="27.0" prefWidth="146.0" text="TravelEaSt" textFill="#002d62">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="24.0" endY="-3.814697265625E-6" layoutX="114.0" layoutY="42.0" startX="-100.0" stroke="#002d62" />
+            <Line endX="25.666671752929688" endY="7.62939453125E-6" layoutX="123.0" layoutY="51.0" startX="-100.0" stroke="#002d62" />
+            <Button fx:id="Add" layoutX="25.0" layoutY="95.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #B9D9EB;" text="Add" textFill="#00308f">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="18.0" layoutY="67.0" prefHeight="17.0" prefWidth="136.0" text="Admin control Section" textFill="#002d62">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="LogOut" layoutX="59.0" layoutY="360.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: #0093AF;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="13.0" layoutY="147.0" prefHeight="17.0" prefWidth="163.0" text=" Item Management Section" textFill="#002d62">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="Vehicle" layoutX="25.0" layoutY="174.0" mnemonicParsing="false" onAction="#Vehicle" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #B9D9EB;" text="Vehicle" textFill="#00308f">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="HotelRoom" layoutX="25.0" layoutY="207.0" mnemonicParsing="false" onAction="#HotelRoom" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #B9D9EB;" text="Hotel Room" textFill="#00308f">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="User" layoutX="25.0" layoutY="274.0" mnemonicParsing="false" onAction="#User" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #B9D9EB;" text="User" textFill="#00308f">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Restaurant1" layoutX="25.0" layoutY="240.0" mnemonicParsing="false" onAction="#Restaurant" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #B9D9EB;" text="Restaurant" textFill="#00308f">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="ReservationRecord" layoutX="25.0" layoutY="307.0" mnemonicParsing="false" onAction="#ReservationRecord" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #B9D9EB;" text="Reservation Record" textFill="#00308f">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="203.0" layoutY="14.0" prefHeight="27.0" prefWidth="223.0" text="Hello Admin!!" textFill="ALICEBLUE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="56.0" prefHeight="27.0" prefWidth="384.0" text="Greetings and Welcome to TravelEaSt....!!!" textFill="ALICEBLUE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="83.0" prefHeight="27.0" prefWidth="373.0" text="We are delighted to see you as a part of our" textFill="ALICEBLUE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="110.0" prefHeight="27.0" prefWidth="384.0" text="community. Feel free to discover, interact, and" textFill="ALICEBLUE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="137.0" prefHeight="27.0" prefWidth="373.0" text="collaborate with us to create something" textFill="ALICEBLUE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="161.0" prefHeight="27.0" prefWidth="373.0" text="wonderful......." textFill="ALICEBLUE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Cancel" layoutX="311.0" layoutY="333.0" mnemonicParsing="false" onAction="#cancleReservation" style="-fx-background-color: #00308F;" text="Cancel Reservation" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="ItemIDTf" layoutX="199.0" layoutY="214.0" promptText="Enter Item ID" />
+      <TextField fx:id="UserTf" layoutX="401.0" layoutY="214.0" promptText="Enter User ID" />
+      <Button fx:id="reserve" layoutX="230.0" layoutY="333.0" mnemonicParsing="false" onAction="#reserve" style="-fx-background-color: #00308F;" text="Reserve" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="start" layoutX="199.0" layoutY="253.0" promptText="Start Date" />
+      <DatePicker fx:id="end" layoutX="398.0" layoutY="253.0" promptText="End Date" />
+      <Button fx:id="makePayment" layoutX="450.0" layoutY="333.0" mnemonicParsing="false" onAction="#makePayment" style="-fx-background-color: #00308F;" text="Make Payment" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="NoGTf" layoutX="199.0" layoutY="289.0" promptText="Enter No Of Guests" />
+   </children>
+</AnchorPane>

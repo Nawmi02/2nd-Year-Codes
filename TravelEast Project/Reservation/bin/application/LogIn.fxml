@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6CB4EE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogInController">
+   <children>
+      <Label alignment="TOP_LEFT" layoutX="80.0" layoutY="14.0" prefHeight="42.0" prefWidth="467.0" text="WELCOME TO TravelEaSt!!!" textFill="#00308f">
+         <font>
+            <Font name="Baskerville Old Face" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="userID" layoutX="28.0" layoutY="157.0" prefHeight="17.0" prefWidth="91.0" text="User ID:" textFill="ALICEBLUE">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userTf" layoutX="94.0" layoutY="153.0" prefHeight="25.0" prefWidth="147.0" promptText="Enter user ID" />
+      <Button fx:id="LogIn" layoutX="147.0" layoutY="308.0" mnemonicParsing="false" onAction="#LogIn" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #00308F;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="-9.33331298828125" endY="247.66665649414062" layoutX="314.0" layoutY="119.0" startX="-9.33331298828125" startY="-29.666664123535156" />
+      <Label fx:id="nameL" layoutX="353.0" layoutY="116.0" text="Name :" textFill="ALICEBLUE">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ageL" layoutX="353.0" layoutY="178.0" text="Age :" textFill="ALICEBLUE">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="adminCB" layoutX="348.0" layoutY="246.0" mnemonicParsing="false" text="Admin">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="nameTf" layoutX="406.0" layoutY="112.0" promptText="Enter Name" />
+      <TextField fx:id="ageTf" layoutX="401.0" layoutY="174.0" prefHeight="25.0" prefWidth="108.0" promptText="Enter age" />
+      <Button fx:id="SignUp" layoutX="497.0" layoutY="308.0" mnemonicParsing="false" onAction="#SignUp" style="-fx-background-color: #00308F;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6CB4EE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="179.0" style="-fx-background-color: #F0F8FF;">
+         <children>
+            <Line endX="14.333343505859375" endY="-7.62939453125E-6" layoutX="137.0" layoutY="76.0" startX="-100.0" stroke="#002d62" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="95.0" prefHeight="17.0" prefWidth="61.0" text="User" textAlignment="CENTER" textFill="#00308f">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserIdTf" layoutX="15.0" layoutY="125.0" promptText="Enter User ID" />
+            <Button fx:id="Search" layoutX="58.0" layoutY="190.0" mnemonicParsing="false" onAction="#findUser" style="-fx-background-color: #0093AF;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Back" layoutX="16.0" layoutY="262.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: #0093AF;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogOut" layoutX="106.0" layoutY="262.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: #0093AF;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="40.0" prefHeight="28.0" prefWidth="116.0" text="TravelEaSt" textFill="#002d62">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="15.0" endY="-7.62939453125E-6" layoutX="125.0" layoutY="68.0" startX="-100.0" stroke="#002d62" />
+      <TableView fx:id="userTable" layoutX="221.0" layoutY="63.0" prefHeight="301.0" prefWidth="345.0">
+         <columns>
+            <TableColumn fx:id="uID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="uName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="age" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="admin" prefWidth="75.0" text="Admin" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
